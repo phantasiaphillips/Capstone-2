@@ -47,7 +47,7 @@
     margin-right: 0.5rem;
 }
 
-.navbar_menu {
+.navbar__menu {
     display: flex;
     align-items: center;
     list-style: none;
@@ -59,7 +59,7 @@
 }
 
 .navbar__links{
-    color: green;
+    color: #B7C68B;
     display: flex;
     align-items: center;
     justify-content: center;
