@@ -235,10 +235,30 @@
     color: #fff;
 }
 
+/* Mountains Information */
 
-
-
-
+.mountainsInformation {
+    display: grid;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+    background-color: #B7c68B;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+.SearchMountainsBTN {
+    font-size: 1rem;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 4px;
+    color: green;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+}
 
 
 
