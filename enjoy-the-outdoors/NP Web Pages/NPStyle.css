@@ -248,7 +248,7 @@
     max-width: 1300px;
     padding: 0 50px;
 }
-.SearchMountainsBTN {
+.SearchMountainsBTN{
     font-size: 1rem;
     padding: 14px 32px;
     border: none;
@@ -259,6 +259,59 @@
     position: relative;
     outline: none;
 }
+
+.main_search_container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 5%;
+    background-image: url(/images/Cannon-StoryImg_2.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-bar{
+    width: 100%;
+    max-width: 700px;
+    background: #B7C68B;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: #fff;
+}
+
+::placeholder{
+    color: green;
+}
+
+.search-bar button img{
+    width: auto;
+}
+
+.search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: #F4F0CB;
+    cursor: pointer;
+}
+
+
+
+
+
 
 
 
