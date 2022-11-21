@@ -96,7 +96,7 @@
     transform: all 0.3s ease;
 }
 
-/* Main CSS */
+/* Main Home Page CSS */
 
 .main {
     background-color: #F4F0CB;
@@ -196,7 +196,7 @@
     width: 100%;
 }
 
-/* Information CSS */
+/* Information Page CSS */
 
 .information {
     background: #ded29e;
@@ -235,7 +235,7 @@
     color: #fff;
 }
 
-/* Mountains Information */
+/* Find Mountains Information Page */
 
 .mountainsInformation {
     display: grid;
@@ -259,6 +259,9 @@
     position: relative;
     outline: none;
 }
+
+
+/* search for park page */
 
 .main_search_container{
     width: 100%;

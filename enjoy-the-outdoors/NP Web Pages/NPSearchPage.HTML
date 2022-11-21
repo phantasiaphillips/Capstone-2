@@ -29,7 +29,7 @@
                         <a href="NPHomePage.HTML" class="navbar__links">Home</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="NPInfoPage.HTML" class="navbar__links">Mountains Information Page</a>
+                        <a href="NPMountainsInfoPage.HTML" class="navbar__links">Mountains Information Page</a>
                     </li>
                     <li class="navbar__item">
                         <a href="NPSearchPage.HTML" class="navbar__links">Search</a>
@@ -45,29 +45,52 @@
         </nav>
     </header>
 
-    <div class="main_search_container">
-        <form action="https://www.google.com/search" method="get" class="search-bar">
-            <input type="text" placeholder="Search for National Parks" name="q">
-            <button type="submit"></button>
-        </form>
+    <div class="NPSearch__page">
+        <div class="NPSearch__container">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="searchtype" id="radioLocationBtn"
+                    value="searchlocation" checked>
+                <label class="form-check-label" for="radioLocationBtn">
+                    Search by Location
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="searchtype" id="radioParkTypeBtn"
+                    value="searchparktype">
+                <label class="form-check-label" for="radioParkTypeBtn">
+                    Search by Park Type
+                </label>
+            </div>
+            <div class="col-6">
+                <form>
+                    <select class="form-select" aria-label="Default select example" id="stateSlct">
+                    </select>
+                </form>
+            </div>
+            <div class="col-6">
+                <form>
+                    <select class="form-select" aria-label="Default select example" id="parkTyp"></select>
+                </form>
+            </div>
+        </div>
+        <div id="filter">
+            <a href="">Clear Filter</a>
+        </div>
+        <div class="SearchMountainsBTN">
+            <button type="submit" id="seachbtn" class="btn btn-success mt-3" value="Select">Find your favorite
+                mountain</button>
+        </div>
 
+
+        <div class="main_search_container">
+            <form action="https://www.google.com/search" method="get" class="search-bar">
+                <input type="text" placeholder="Search for National Parks" name="q">
+                <button type="submit"></button>
+            </form>
+
+        </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </div>
 
     <footer>
 
@@ -79,6 +102,8 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
         </script>
     <script src="NP.js"></script>
+    <script src="/scripts/nationalParkData.js"></script>
+    <script src="/scripts/search.js"></script>
 </body>
 
 </html>
