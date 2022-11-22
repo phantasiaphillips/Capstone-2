@@ -2,25 +2,24 @@
 
 
 window.onload = function () {
-    // dropdown fills
-    fillStateDropdown();
-    fillParkTypDropdown();
+fillStateDropdown();
+fillParkTypDropdown();
 
 
-    // hide / show form fields
-    selectLocationOptionShow();
-    selectLocationOptionHide();
-    selectParkTypeOptionHide();
-    selectParkTypeOptionShow();
+
+selectLocationOptionShow();
+selectLocationOptionHide();
+selectParkTypeOptionHide();
+selectParkTypeOptionShow();
 
 
-    // onchange events
-    document.getElementById("radioLocationBtn").onchange = currentlySelectedSearchType1;
-    document.getElementById("radioParkTypeBtn").onchange = currentlySelectedSearchType2;
+
+document.getElementById("radioLocationBtn").onchange = currentlySelectedSearchType1;
+document.getElementById("radioParkTypeBtn").onchange = currentlySelectedSearchType2;
 
 
-    document.getElementById("stateSlct").onchange = nationalLocationSelectCards;
-    document.getElementById("parkTyp").onchange = nationalParkTypeSelectCards;
+document.getElementById("stateSlct").onchange = nationalLocationSelectCards;
+document.getElementById("parkTyp").onchange = nationalParkTypeSelectCards;
 
 
 
@@ -29,45 +28,45 @@ window.onload = function () {
 
 
 function fillStateDropdown() {
-    const stateSelect = document.getElementById("stateSlct");
-    let selectStateOpt = document.createElement("option");
+const stateSelect = document.getElementById("stateSlct");
+let selectStateOpt = document.createElement("option");
 
 
-    selectStateOpt.value = "";
-    selectStateOpt.textContent = "Select a State...";
-    stateSelect.appendChild(selectStateOpt);
+selectStateOpt.value = "";
+selectStateOpt.textContent = "Select a State...";
+stateSelect.appendChild(selectStateOpt);
 
 
-    let locationLength = locationValues.length;
-    for (let i = 0; i < locationLength; i++) {
-        let Opt1 = document.createElement("option");
+let locationLength = locationValues.length;
+for (let i = 0; i < locationLength; i++) {
+    let Opt1 = document.createElement("option");
         Opt1.value = locationValues[i];
         Opt1.textContent = locationValues[i];
 
 
-        stateSelect.appendChild(Opt1);
+    stateSelect.appendChild(Opt1);
     }
 }
 
 
 function fillParkTypDropdown() {
-    const parkType = document.getElementById("parkTyp");
-    let selectParkTyp = document.createElement("option");
+const parkType = document.getElementById("parkTyp");
+let selectParkTyp = document.createElement("option");
 
 
-    selectParkTyp.value = "";
-    selectParkTyp.textContent = "Select Park Type..."
-    parkType.appendChild(selectParkTyp);
+selectParkTyp.value = "";
+selectParkTyp.textContent = "Select Park Type..."
+parkType.appendChild(selectParkTyp);
 
 
-    let typeLength = ParkTypes.length;
+let typeLength = ParkTypes.length;
     for (let i = 0; i < typeLength; i++) {
         let Opt2 = document.createElement("option");
         Opt2.value = ParkTypes[i];
         Opt2.textContent = ParkTypes[i];
 
 
-        parkType.appendChild(Opt2);
+    parkType.appendChild(Opt2);
     }
 }
 
@@ -184,7 +183,7 @@ function nationalLocationSelectCards() { // working..
 }
 
 
-function nationalParkTypeSelectCards() { // working
+function nationalParkTypeSelectCards() {
     const resultsContainer = document.getElementById("resultsContainer");
 
 
