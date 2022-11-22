@@ -38,9 +38,6 @@ for (let i = 0; i < locationLength; i++) {
     }
 }
 
-
-
-
 selectParkTyp.value = "";
 selectParkTyp.textContent = "Select Park Type..."
 parkType.appendChild(selectParkTyp);
@@ -64,11 +61,6 @@ function selectLocationOptionHide() {
 function selectLocationOptionShow() {
     document.getElementById("stateContainer").style.display = "block";
 }
-
-
-
-
-
 function selectParkTypeOptionShow() {
     document.getElementById("parkTypContainer").style.display = "block";
 }
