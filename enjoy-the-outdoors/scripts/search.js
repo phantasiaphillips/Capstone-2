@@ -5,12 +5,13 @@ window.onload = function () {
 fillStateDropdown();
 fillParkTypDropdown();
 
-
-
 selectLocationOptionShow();
 selectLocationOptionHide();
 selectParkTypeOptionHide();
 selectParkTypeOptionShow();
+
+
+
 
 
 
@@ -108,8 +109,6 @@ function currentlySelectedSearchType2() {
         selectParkTypeOptionShow();
         selectLocationOptionHide();
     }
-
-
 }
 
 function nationalLocationSelectCards() { // working..
