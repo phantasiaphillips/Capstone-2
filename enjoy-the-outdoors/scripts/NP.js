@@ -1,5 +1,5 @@
 "use strict";
-// import location Data from locationdata.js
+
 import { locationsArray } from "./locationData.js";
 import { nationalParksArray } from "./nationalParkData.js";
 import { parkTypesArray } from "./parkTypeData.js";
@@ -7,7 +7,7 @@ import { parkTypesArray } from "./parkTypeData.js";
 const locationSearchSelect = document.querySelector("#locationSearchSelect");
 const typeSearchSelect = document.querySelector("#typeSearchSelect");
 
-// TOGGLE SEARCH TYPE
+
 const locationSearchContainer = document.querySelector(
   "#locationSearchContainer"
 );
@@ -37,7 +37,7 @@ function init() {
   populateParktypeOptions();
 }
 
-//load up options from data file.
+
 function populateLocationOptions() {
   let locationOptions = locationsArray
     .map((loc) => {
@@ -77,7 +77,7 @@ typeSearchSelect.addEventListener("change", () => {
   console.log(result);
 });
 
-//load up options from data file.
+
 function populateParktypeOptions() {
   let typeOptions = parkTypesArray
     .map((typ) => {
@@ -88,17 +88,6 @@ function populateParktypeOptions() {
     ' <option value="">Select ParkType</option>' + typeOptions;
 }
 
-//figure out which is the selected optoin, and hide/show the appropriate areas...
-// function OnSearchTypeChanged() {
-//   let current = getCurrentlySelectedSearchType();
-//   if (current == "location") {
-//     selectLocationShow();
-//     selectParktypeHide();
-//   } else if ((current = "parktype")) {
-//     selectLocationHide();
-//     selectParktypeShow();
-//   }
-// }
 
 function filterParksByParkType(inputParks, parkType) {
   let results = [];
@@ -116,16 +105,6 @@ function filterParksByLocation(inputParks, location) {
   return results;
 }
 
-//returns "location" or "parktype" depending on current selection
-// function getCurrentlySelectedSearchType() {}
-
-// function selectLocationHide() {}
-
-// function selectLocationShow() {}
-
-// function selectParktypeHide() {}
-
-// function selectParktypeShow() {}
 
 function clearSearchResults() {
   const resultsRow = document.getElementById("resultsRow");
@@ -134,18 +113,17 @@ function clearSearchResults() {
   typeSearchSelect.value = "";
 }
 
-//Add an array of parks to the results div...
+
 function addParksToResults(parks) {
   for (let park of parks) {
     addParkToResults(park);
   }
 }
 
-//Adds a single park to the results div.
+
 function addParkToResults(park) {
   const resultsRow = document.getElementById("resultsRow");
-  //create the html to represetn a single park, and add it to the
-  // serach reasults div with "resultsRow" id
+  
   let outerCardDiv = document.createElement("div");
   outerCardDiv.className = "outerCardDiv";
   let topDiv = document.createElement("div");
@@ -175,8 +153,8 @@ function addParkToResults(park) {
   topDiv.append(heading);
   topDiv.append(address);
 
-  //do all of my styling / content here....
+  
 
   resultsRow.appendChild(outerCardDiv);
-  //   resultsRow.innerHTML =outerCardDiv
+  
 }
